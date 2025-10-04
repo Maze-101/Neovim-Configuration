@@ -21,7 +21,7 @@ This is a modern Neovim configuration built from the ground up in Lua, specifica
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url> ~/.config/nvim
+    git clone https://github.com/Maze-101/Neovim-Configuration ~/.config/nvim
     ```
 2.  **Launch Neovim:**
     ```bash
@@ -57,3 +57,4 @@ The leader key is set to `Space`.
 | `<F5>`   | **Compile & Run (File I/O)**: Compiles and runs the current C++ file, taking input from `input.txt` and writing output to `output.txt`. |
 | `<F6>`   | **Compile & Run (Background)**: Compiles and runs the current C++ file in the background. |
 | `<F7>`   | **Compile & Run (Interactive)**: Opens a vertical terminal, compiles, and runs the current C++ file for interactive input. |
+
