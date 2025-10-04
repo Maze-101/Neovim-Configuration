@@ -1,22 +1,31 @@
 -- lua/user/file-explorer.lua
--- This file configures the nvim-tree file explorer.
+-- This file configures nvim-tree.lua
 
--- Safely require the plugin
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
-    vim.notify("Plugin 'nvim-tree' not found!", "warn")
-    return
+  return
 end
 
--- Configuration
 nvim_tree.setup({
   sort_by = "case_sensitive",
+  -- This tells nvim-tree to track the file you are currently focused on
+  update_focused_file = {
+    enable = true,
+    update_cwd = true,
+  },
+  -- This explicitly disables the "Pick a window" prompt
+  actions = {
+    open_file = {
+      window_picker = {
+        enable = false,
+      },
+    },
+  },
   view = {
     width = 30,
     side = "left",
-  },
-  renderer = {
-    group_empty = true,
+    -- This helps the file explorer resize more intelligently
+    adaptive_size = true,
   },
   filters = {
     dotfiles = true,
