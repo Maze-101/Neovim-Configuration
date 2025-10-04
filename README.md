@@ -37,6 +37,7 @@ The leader key is set to `Space`.
 
 | Keymap            | Description                                   |
 | ----------------- | --------------------------------------------- |
+| `<leader>v` | splits windows vertically. |
 | `<C-h>`, `<C-j>`, `<C-k>`, `<C-l>` | Navigate between window splits (left, down, up, right) |
 | `<leader>gd`        | Go to definition of the symbol under the cursor. |
 | `<leader>gr`        | List all references to the symbol under the cursor. |
@@ -57,5 +58,6 @@ The leader key is set to `Space`.
 | `<F5>`   | **Compile & Run (File I/O)**: Compiles and runs the current C++ file, taking input from `input.txt` and writing output to `output.txt`. |
 | `<F6>`   | **Compile & Run (Background)**: Compiles and runs the current C++ file in the background. |
 | `<F7>`   | **Compile & Run (Interactive)**: Opens a vertical terminal, compiles, and runs the current C++ file for interactive input. |
+
 
 
