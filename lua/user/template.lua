@@ -48,7 +48,7 @@ local cpp_template = {
   'const ll INF = 1e18;',
   '',
   'void solve(){',
-  '    ', -- The cursor will be placed here
+  '    ',
   '}',
   '',
   'int main(){',
